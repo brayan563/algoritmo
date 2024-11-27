@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de areas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- AsegÃºrate de tener tu archivo styles.css -->
+</head>
+<body>
+
+    <div class="container">
+        <h2>Calculo de areas</h2>
+
+        <!-- Selector de figura -->
+        <label for="figure">Elige una figura:</label>
+        <select id="figure" onchange="showInputs()">
+            <option value="circle">Circulo</option>
+            <option value="square">Cuadrado</option>
+            <option value="rectangle">Rectangulo</option>
+            <option value="triangle">Triangulo</option>
+        </select>
+
+        <!-- Inputs para cada figura -->
+        <div id="inputs"></div>
+
+        <button onclick="calculateArea()">Calcular Area</button>
+
+        <h3>Area: <span id="result">0</span></h3>
+    </div>
+
+    <!-- AquÃ­ va el cÃ³digo de JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html
